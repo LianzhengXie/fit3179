@@ -20,6 +20,13 @@ header .inner-header {
     z-index: 9999;
 }
 
+body {
+    background-color: lightgray;
+    background-image: url(https://www.dlfspain.com/wp-content/uploads/2020/03/coronavirus-protocol-dlf-group.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .title-bar {
     font-size: 1.2vw;
     font-weight: 600;
