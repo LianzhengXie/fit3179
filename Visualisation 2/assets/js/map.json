@@ -31,7 +31,6 @@
                 "input": "select",
                 "options": [
                     null,
-                    "North America",
                     "Asia",
                     "Africa",
                     "North America",
@@ -41,7 +40,6 @@
                 ],
                 "labels": [
                     "Show all",
-                    "North America",
                     "Asia",
                     "Africa",
                     "North America",
