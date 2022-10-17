@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
-  <script src=""></script>
-  <script src=""></script>
-  <script src=""></script>
-  
-  
-  <!-- CSS file -->
-  <link rel="" type="" href="" media="">
-  
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.2"></script>
+    <!-- CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
-  
-<div id=""></div>
 
-<script type="text/javascript">
-
-  var spec2 = "";
-  vegaEmbed('#', spec2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-</script>
-
+<body style="font-family: 'Slab', sans-serif;">
+    <header>
+        <div class="inner-header">
+            <div class="title-bar">
+                The distribution of the COVID-19 all over the world
+            </div>
+            <nav class="navbar">
+                <div>
+                    <a href="./index.html#chart1">Distribution</a>
+                </div>
+                <div>
+                    <a href="./index.html#chart2">New Cases</a>
+                </div>
+                <div>
+                    <a href="./index.html#chart3">Total Deaths</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="info-pane">
+        In this visualization task, I would analysis three topics: the first one is to show the distribution of total cases of the COVID-19 over the wolrd; the second one is that showing the new cases condition of each country;
+        The last one is to show the total deaths cases of each country.
+    </div>
+    <div class="charts">
+        <div id="chart1" class="world-map"></div>
+    </div>
+    <div class="info-pane">
+        In this first part, it would use two dataset to finish the visualzaition task, the first one is a vector data
+        which is used to draw the world map, the data source link is:
+        <p><a href="https://www.trafforddatalab.io/interactive_graphics_companion/data/countries.geojson"
+                class="link">https://www.trafforddatalab.io/interactive_graphics_companion/data/countries.geojson</a>
+        </p>
+        and the another dataset is the COVID-19 data which is used to analysis the distribution of the COVID-19 over the
+        world, its data source link is:
+        <p>
+            <a href="https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv"
+                class="link">https://github.com/owid/covid-19-data/blob/master/public/data/owid-covid-data.csv</a>
+        </p>
+        <p>
+            From the color map above, the color of each region in the world map is different, some region's color is deep,
+            and some region's color is light, that's because I use the depth of the color to represent the population of
+            the total cases of the COVID-19 in each country. From the color world map, it obviously know the total cases population
+            of the region with deep color are more serious than other region, especially, the Brazil, USA, India and
+            Russia, and so on.
+        </p>
+    </div>
+    <div class="charts">
+        <div id="chart2" class="world-map"></div>
+    </div>
+    <div class="info-pane">
+        In this part, it would show the new cases of the COVID-19  of each country. The different country use the different color to mark,
+        and it use the new cases value to represent the size of the circle, the larger of the new cases, the larger the circle's radius. Additionally,
+        it would filter all the new cases according to the region. Meanwhile, it could slide the slide bar to see different new cases of different country.
+    </div>
+    <div class="charts">
+        <div id="chart3" style="width: 100%;"></div>
+    </div>
+    <div class="info-pane">
+        <!-- <p>Data source link: <a class="link"
+                href="https://raw.githubusercontent.com/jianingZhou28321367/ass2/justin/Data/TOP5%20ghg.csv">https://raw.githubusercontent.com/jianingZhou28321367/ass2/justin/Data/TOP5%20ghg.csv</a>
+        </p> -->
+        The bar chart above is used to show total deaths cases of each country. The longer the bar chart, the more deaths cases. Of course, we could filter what we want to see.
+        For example, it could choose one region, the chart above would just show all the bar charts of the countries belonging to the region. Meanwhile, it also would slide the range bar
+        to see the bar charts among different numeric values.
+    </div>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
+
 </html>
