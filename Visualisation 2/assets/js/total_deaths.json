@@ -4,7 +4,7 @@
     "height": 600,
     "title": "Total deaths case of the COVID-19 of each country",
     "data": {
-        "url": "assets/data/covid19CountryWise.csv"
+        "url": "https://raw.githubusercontent.com/LianzhengXie/fit3179/main/Visualisation%202/assets/data/covid19CountryWise.csv"
     },
     "params": [
         {
