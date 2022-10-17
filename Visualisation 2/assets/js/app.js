@@ -12,4 +12,3 @@ const vis3 = "https://raw.githubusercontent.com/LianzhengXie/fit3179/main/Visual
 
 vegaEmbed('#chart3', vis3).then(function (result) {
 }).catch(console.error);
-
