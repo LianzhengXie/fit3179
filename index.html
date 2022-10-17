@@ -34,9 +34,11 @@
         In this visualization task, I would analysis three topics: the first one is to show the distribution of total cases of the COVID-19 over the wolrd; the second one is that showing the new cases condition of each country;
         The last one is to show the total deaths cases of each country.
     </div>
+
     <div class="charts">
         <div id="chart1" class="world-map"></div>
     </div>
+
     <div class="info-pane">
         In this first part, it would use two dataset to finish the visualzaition task, the first one is a vector data
         which is used to draw the world map, the data source link is:
@@ -55,19 +57,27 @@
             the total cases of the COVID-19 in each country. From the color world map, it obviously know the total cases population
             of the region with deep color are more serious than other region, especially, the Brazil, USA, India and
             Russia, and so on.
+        </br>
+            Two selectable buttons in the lower left corner, where the year range can be selected according to the pulley 
+            2020,2021 and 20223 different total number of cases per year. You can also filter out other continents if you 
+            want to compare different countries within the same continent.
         </p>
     </div>
+
     <div class="charts">
         <div id="chart2" class="world-map"></div>
     </div>
+
     <div class="info-pane">
         In this part, it would show the new cases of the COVID-19  of each country. The different country use the different color to mark,
         and it use the new cases value to represent the size of the circle, the larger of the new cases, the larger the circle's radius. Additionally,
         it would filter all the new cases according to the region. Meanwhile, it could slide the slide bar to see different new cases of different country.
     </div>
+
     <div class="charts">
         <div id="chart3" style="width: 100%;"></div>
     </div>
+    
     <div class="info-pane">
         <!-- <p>Data source link: <a class="link"
                 href="https://raw.githubusercontent.com/jianingZhou28321367/ass2/justin/Data/TOP5%20ghg.csv">https://raw.githubusercontent.com/jianingZhou28321367/ass2/justin/Data/TOP5%20ghg.csv</a>
@@ -76,7 +86,30 @@
         For example, it could choose one region, the chart above would just show all the bar charts of the countries belonging to the region. Meanwhile, it also would slide the range bar
         to see the bar charts among different numeric values.
     </div>
-    <script type="text/javascript" src="assets/js/app.js"></script>
+
+    <div class="info-pane">
+        <p>
+            This visualisation is create by <a href="https://github.com/LianzhengXie/fit3179">LianzhengXie</a>
+            as FIT3179 Assignment2
+        </p>
+    </div>
+
+<script type="text/javascript">
+    var vis1 = "https://raw.githubusercontent.com/LianzhengXie/fit3179/main/Visualisation%202/assets/js/map.json";
+    var vis2 = "https://raw.githubusercontent.com/LianzhengXie/fit3179/main/Visualisation%202/assets/js/new_cases.json";
+    var vis3 = "https://raw.githubusercontent.com/LianzhengXie/fit3179/main/Visualisation%202/assets/js/total_deaths.json";
+    vegaEmbed('#chart1', vis1).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    vegaEmbed('#chart2', vis2).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    vegaEmbed('#chart3', vis3).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+
+</script>
 </body>
 
 </html>
