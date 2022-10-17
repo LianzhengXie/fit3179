@@ -58,7 +58,7 @@
     "layer": [
         {
             "data": {
-                "url": "assets/data/owid-covid-data-map.csv"
+                "url": "https://raw.githubusercontent.com/LianzhengXie/fit3179/main/Visualisation%202/assets/data/owid-covid-data-map.csv"
             },
             "transform": [
                 {
