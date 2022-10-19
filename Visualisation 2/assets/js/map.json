@@ -6,6 +6,13 @@
     "title": "The distribution of the COVID-19 in the world from 2020 to 2022 year",
     "params": [
         {
+            {
+            "name": "highlight",
+            "select": {
+                "type": "point",
+                "on": "mouseover"
+            }
+        },
             "name": "year_selection",
             "value": 2020,
             "bind": {
