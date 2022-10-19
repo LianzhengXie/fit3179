@@ -42,9 +42,6 @@ header .navbar {
     text-decoration: none;
     color: orange;
 }
-.navbar div a:hover {
-    color: rgb(226, 149, 6);
-}
 
 .charts {
     width: 80%;
