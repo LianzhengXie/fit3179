@@ -12,6 +12,7 @@
                 "on": "mouseover"
             }
         },
+        {
             "name": "year_selection",
             "value": 2020,
             "bind": {
