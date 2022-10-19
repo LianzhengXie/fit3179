@@ -126,11 +126,6 @@
                 "field": "New Cases (7 days)",
                 "type": "quantitative",
                 "format": ","
-            },
-            {
-                "field": "New Deaths (7 days)",
-                "type": "quantitative",
-                "format": ","
             }
         ]
     }
